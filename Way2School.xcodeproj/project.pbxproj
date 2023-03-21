@@ -11,6 +11,7 @@
 		4128277E29C99E6D00F6213C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4128277D29C99E6D00F6213C /* ContentView.swift */; };
 		4128278029C99E6E00F6213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4128277F29C99E6E00F6213C /* Assets.xcassets */; };
 		4128278429C99E6E00F6213C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4128278329C99E6E00F6213C /* Preview Assets.xcassets */; };
+		4128278C29C9A75300F6213C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4128278B29C9A75300F6213C /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		4128277F29C99E6E00F6213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4128278129C99E6E00F6213C /* Way2School.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Way2School.entitlements; sourceTree = "<group>"; };
 		4128278329C99E6E00F6213C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4128278D29C9B23300F6213C /* ChatGPT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ChatGPT.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4128278C29C9A75300F6213C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,6 +39,7 @@
 		4128276F29C99E6D00F6213C = {
 			isa = PBXGroup;
 			children = (
+				4128278D29C9B23300F6213C /* ChatGPT.md */,
 				4128277A29C99E6D00F6213C /* Way2School */,
 				4128277929C99E6D00F6213C /* Products */,
 			);
@@ -85,6 +89,9 @@
 			dependencies = (
 			);
 			name = Way2School;
+			packageProductDependencies = (
+				4128278B29C9A75300F6213C /* Alamofire */,
+			);
 			productName = Way2School;
 			productReference = 4128277829C99E6D00F6213C /* Way2School.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +120,9 @@
 				Base,
 			);
 			mainGroup = 4128276F29C99E6D00F6213C;
+			packageReferences = (
+				4128278A29C9A75300F6213C /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 4128277929C99E6D00F6213C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4128278A29C9A75300F6213C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4128278B29C9A75300F6213C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4128278A29C9A75300F6213C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4128277029C99E6D00F6213C /* Project object */;
 }
