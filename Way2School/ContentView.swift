@@ -36,14 +36,14 @@ struct IconButton: View {
 struct ContentView: View {
     // Button data (SF Symbols icons and labels)
     let buttons = [
-        ("figure.walk", "Walking"),
-        ("bicycle", "Bike"),
-        ("scooter", "Scooter"),
-        ("car", "Car"),
-        ("tram.fill", "Train"),
-        ("bus", "Bus"),
-        ("tram", "Subway"),
-        ("sailboat", "Other"),
+        ("figure.walk", "Oinez"),
+        ("bicycle", "Bizikleta"),
+        ("scooter", "Patinetea"),
+        ("car", "Autoa"),
+        ("tram.fill", "Trena"),
+        ("bus", "Autobusa"),
+        ("tram", "Metroa"),
+        ("sailboat", "Beste bat"),
     ]
 
     // Grid layout
