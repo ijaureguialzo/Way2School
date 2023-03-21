@@ -71,22 +71,22 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                // Subtitle
-                Text("Nola zatoz eskolara?")
-                    .font(.system(size: 20, weight: .medium))
-                    .foregroundColor(.gray)
-                    .frame(maxWidth: .infinity, alignment: .leading) // Align the subtitle to the left
-                    .padding(.bottom)
+                VStack(alignment: .leading, spacing: 10) {
+                    // Subtitle
+                    Text("Nola zatoz eskolara?")
+                        .font(.system(size: 20, weight: .medium))
+                        .foregroundColor(.gray)
 
-                // Buttons Grid
-                LazyVGrid(columns: columns, spacing: 20) {
-                    ForEach(0..<buttons.count, id: \.self) { index in
-                        IconButton(iconName: buttons[index].0, labelText: buttons[index].1, buttonSize: buttonSize) {
-                            sendRequest(id: index) // Call the sendRequest function when tapped
+                    // Buttons Grid
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(0..<buttons.count, id: \.self) { index in
+                            IconButton(iconName: buttons[index].0, labelText: buttons[index].1, buttonSize: buttonSize) {
+                                sendRequest(id: index) // Call the sendRequest function when tapped
+                            }
                         }
                     }
                 }
-                .padding()
+                .padding() // Apply padding to the VStack
             }
             .navigationTitle("Way2School")
         }
